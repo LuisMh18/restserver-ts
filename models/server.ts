@@ -1,4 +1,6 @@
 import express, { Application } from 'express';
+import cors from 'cors';
+
 import userRoutes from '../routes/usuarios';
 
 class Server {
@@ -8,11 +10,25 @@ class Server {
         usuarios: '/api/usuarios',
     }
     constructor(){
-        this.app = express();
+        this.app = express(); 
         this.port = process.env.PORT || '8000';
+
+        //Middlewares
+        this.middlewares();
 
         //rutas de mi aplicación
         this.routes();
+    }
+
+    middlewares(){
+        //CORS
+        this.app.use( cors() );
+
+        // Lectura y parseo del body
+        this.app.use( express.json() );
+
+        //Directorio Público
+        this.app.use( express.static('public') );
     }
 
     routes(){

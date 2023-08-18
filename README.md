@@ -77,4 +77,5 @@
 # 1 - En una terminal ejecutar el soguiente comando `nodemon dist/app.js`
 # 2 - En otra terminal ejecutar el comando `tsc --watch` este comando esta escuchando todos los cambios que se hagan y lo compila automáticamente
 
-
+# Instalar paquete para el tipado de cors de TypeScript 
+`npm i --save-dev @types/cors`
