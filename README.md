@@ -79,3 +79,15 @@
 
 # Instalar paquete para el tipado de cors de TypeScript 
 `npm i --save-dev @types/cors`
+
+# Instalar sequelize
+`npm install --save sequelize`
+
+# Instalar el paquete dependiendo de la base de datos con la que estes trabajando
+# One of the following:
+`npm install --save pg pg-hstore` # Postgres
+`npm install --save mysql2`
+`npm install --save mariadb`
+`npm install --save sqlite3`
+`npm install --save tedious` # Microsoft SQL Server
+`npm install --save oracledb` # Oracle Database

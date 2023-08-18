@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { create, deleteOne, findAll, findOne, update } from '../controllers/usuarios';
 
 const router = Router();
-
+ 
 router.get('/', findAll);
 router.get('/:id', findOne);
 router.post('/', create);
