@@ -91,3 +91,6 @@
 `npm install --save sqlite3`
 `npm install --save tedious` # Microsoft SQL Server
 `npm install --save oracledb` # Oracle Database
+
+# Instalar express-validator
+`npm i express-validator`
